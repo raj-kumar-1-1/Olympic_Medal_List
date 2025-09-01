@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="../styling/signup.css">
+</head>
+<body>
+    <section>
+    <div class="login-box">
+        <form onsubmit="signup(event)">
+    <h1 style="color: #fff; text-align: center;">Sign Up</h1>
+
+    <div class="input-box">
+        <span class="icon"><ion-icon name="person"></ion-icon></span>
+        <input type="text" id="fullname" required>
+        <label>Full Name</label>
+    </div>
+
+    <div class="input-box">
+        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+        <input type="email" id="email" required>
+        <label>Email</label>
+    </div>
+
+    <div class="input-box">
+        <span class="icon"><ion-icon name="call"></ion-icon></span>
+        <input type="text" id="mobile_number" required>
+        <label>Mobile Number</label>
+    </div>
+
+    <div class="input-box">
+        <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+        <input type="text" id="username" required>
+        <label>Username</label>
+    </div>
+
+    <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" id="password" required>
+        <label>Password</label>
+    </div>
+
+    <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" id="confirmPassword" required>
+        <label>Confirm Password</label>
+    </div>
+
+    <button type="submit">Sign Up</button>
+
+    <div class="register-link">
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+</form>
+
+    </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+async function signup(event) {
+    event.preventDefault();
+
+    const fullname = document.getElementById("fullname").value;
+    const email = document.getElementById("email").value;
+    const mobile_number = document.getElementById("mobile_number").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+    const userData = {
+        fullname,
+        email,
+        mobile_number,
+        username,
+        password
+    };
+
+    try {
+        const response = await fetch("http://localhost:3000/api/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userData),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            alert("Signup successful! Redirecting to login...");
+            window.location.href = "login.html";
+        } else {
+            alert("Signup failed: " + result.message);
+        }
+    } catch (error) {
+        alert("Something went wrong!");
+        console.error("Signup Error:", error);
+    }
+}
+</script>
+
+</body>
+</html>

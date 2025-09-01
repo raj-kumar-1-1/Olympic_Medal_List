@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Data</title>
+    <link rel="stylesheet" href="../styling/history.css">
+    <link rel="stylesheet" href="../styling/nav.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Michroma" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="navigation-bar" >
+      <div id="headingNav">
+          <img id="navLogo"   src="../assets/rings.png">
+      <a href="index.html" id="webname" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; color:white; ">Olympic Medal List</a>
+      </div>
+      <div style=" width:49.5rem; justify-content: space-evenly; ">
+        <a href="standings.html" class="navRight" style="border-radius: 8px; padding:3px;  ">Medal Standings</a>
+        <!-- <a href="standings.html" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;border-radius: 8px; padding:3px; text-shadow:2px 2px 5px rgba(255, 170, 58, 0.68);  ">Medal Standings</a> -->
+        <a href="history.html" class="navRight" style="border-radius: 8px; padding:3px;  "  >Historical Data</a>
+        <a href="#" class="navRight"  style=" border-radius: 8px; padding:3px;  " >Medal Trends</a>
+        <a href="#" class="navRight"  style=" border-radius: 8px; padding:3px;  " >Athlete spotlight</a>
+        <a href="#" class="navRight"  style=" border-radius: 8px; padding:3px;  " >Countries Compare</a>
+        </div>
+    </div>
+ <!--------------------------------------------------------------------------------------------------------->   
+    <h1 style="text-align: center;  color:#fff;font-size: 5rem; font-family: Michroma; ">Country Medals</h1>
+   <div id="countryBox" style="margin-bottom: 0;">
+    <input id="countryInput" type="text"  style="color:#fff;" placeholder="Search Country" style="margin-bottom: 0;">
+    <button id="goCountry" onclick="fetchFromInput()" style="font-size: 31px;">Go</button>
+   </div>
+   <!-------------------------------------------------------------------------------------------------------------------->
+   <div style="display:flex; justify-content: center;align-items: center; flex-direction: row;">
+       <div class="countryOverview">
+           <div class="countryFlag" id="flag">
+            </div>
+            
+            <div class="countryDetials">
+            <h1 id="countryName" style="color: #fff;"></h1>
+            
+                <div id="countryAchievement">
+                <h3 style=" margin-left: 0;  text-align:justify; font-size:1.2rem;color: #fff; " id="countryBrief"></h3>
+                    </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div style=" display: flex; justify-content: center; align-items: center; margin-top: 5rem;">
+        <div id="standingDiv" class="olympicStandings">
+            
+            </div>
+                 <a onclick="paginationRequest()" style="display: flex; margin-left: 0; align-items: center; justify-content: center;" ><img   src="../assets/flags/next_arrow.png"  style="width:5rem; height: 5rem; background-color: aliceblue;border-radius: 50%; " alt="tennis"></a>
+
+            </div>
+
+    <script>
+    function fetchFromInput() {
+  const input = document.getElementById("countryInput").value.trim();
+  if (input) {
+    fetchCountryData(input);
+  }
+}
+</script>
+<script src="../scripts/history.js"></script>    
+</body>
+</html>

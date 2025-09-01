@@ -1,0 +1,230 @@
+body{
+    /* background-color: black; */
+    color:black;
+}
+
+#goButton{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: rgb(46, 172, 207);
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    
+}
+
+#selection{
+    display: flex;
+
+}
+#standingsHeading{
+    /* color:black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width:700px;
+    margin-left:25rem;
+    border-radius: 8px;
+    height:6rem;
+    margin-top: 4rem;
+    box-shadow: 2px 2px 10px;
+    
+}
+#mainStandings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* border:2px solid black; */
+    color: black;
+    
+
+}
+
+#stand3{
+      display: flex;
+    justify-content:last baseline;
+    align-items: center;
+    flex-direction: column;
+    /* border:2px solid black; */
+    height:30rem;
+    width:20rem;
+    position: relative;
+    margin-left:0;
+    margin-right:5rem;
+    margin-top: 14rem;
+
+}
+#stand2{
+      display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* border:2px solid black; */
+    height:30rem;
+    width:20rem;
+    position: relative;
+        margin-top: 9rem;
+        margin-right: -10rem;
+
+
+}
+#stand1{
+      display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* border:2px solid black; */
+    height:30rem;
+    width:20rem;
+    top:0;
+    position: relative;
+    margin-right:5rem ;
+        margin-top:-7rem;
+
+
+}
+.flag{
+    border:8px solid rgba(234, 203, 27);
+    width:12rem;
+    height:12rem;
+    border-radius: 50%;
+    z-index: 1;
+    /* margin-top: 2rem; */
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+
+
+}
+#stand3-flag{
+    background-image: url("./assets/indian-flag.png");
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+
+}
+#stand1-flag{
+    background-image: url("./assets/usa-flag.png");
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+    /* height:25rem; */
+
+}
+#stand2-flag{
+    background-image: url("./assets/china-flag.png");
+    background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover; 
+  /* height:18rem; */
+
+}
+#stats3{
+     border:2px solid black;
+    height:22rem;
+    width:16rem;
+    z-index: 0;
+    margin-top: -3.5rem;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#stats1{
+   border:2px solid black;
+    height:22rem;
+    width:16rem;
+    z-index: 0;
+    margin-top: -3.5rem;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#stats1 h1{
+    padding:0;
+    margin:0.5rem;
+}
+#stats2 h1{
+    padding:0;
+    margin:0.5rem;
+}
+#stats3 h1{
+    padding:0;
+    margin:0rem;
+}
+.mainContent{
+    display: flex;
+}
+#stats2{
+  border:2px solid black;
+    height:22rem;
+    width:16rem;
+    z-index: 0;
+    margin-top: -3.5rem;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #stand1,#stand2,#stand3
+{
+    height:40rem;
+} */
+ #stats1,#stats2,#stats3{
+    display:flex;
+    flex-direction: column;
+    margin-left: 0;
+   justify-content:center;
+   align-items: center;
+   background-color: white;
+   border-radius: 1rem;
+   border-color: white;
+
+ }
+ /* #stats3{
+     display:flex;
+    flex-direction: column;
+    margin-left: 0;
+   justify-content:center;
+   align-items: center;
+   background-color: aliceblue;
+   
+
+ } */
+#stats3 h1{
+    margin:10px;
+}
+#stats1,#stats2,#stats3,.flag{
+    box-shadow: 5px 5px 8px  rgb(147, 129, 129);
+}
+body{
+    /* background-color: rgb(196, 242, 200); */
+}
+#standingsHeading h3{
+
+    font-size: 4rem;
+    /* font-style: italic; */
+    text-shadow: 2px 2px 5px;
+}
+#standingsHeading h1{
+
+    font-size: 4rem;
+    /* font-style: italic; */
+    text-shadow: 2px 2px 5px;
+}
+
+#yearSelection{
+    background-color: rgb(218, 180, 45);
+    height:15rem;
+    width:18rem;
+    margin-top: 9rem;
+    text-align: center;
+    border-radius: 20%;
+    color:rgb(109, 89, 89);
+}

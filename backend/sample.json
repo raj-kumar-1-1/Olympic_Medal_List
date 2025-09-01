@@ -1,0 +1,17 @@
+{
+  "countryName": "India",
+  "olympics": {
+    "2020": {
+      "gold": { "count": 1 },
+      "silver": { "count": 2 },
+      "bronze": { "count": 1 }
+    },
+    "2016": {
+      "gold": { "count": 0 },
+      "silver": { "count": 1 },
+      "bronze": { "count": 1 }
+    }
+  }
+}
+
+

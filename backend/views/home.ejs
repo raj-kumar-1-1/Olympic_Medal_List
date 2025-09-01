@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styling/index.css">
+    <title>Olympic Medals List</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Michroma" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navigation-bar" >
+      <div id="headingNav">
+          <img id="navLogo"   src="../assets/rings.png">
+      <a href="#" id="webname" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; color:white; ">Olympic Medal List</a>
+      </div>
+      <div style=" width:49.5rem; justify-content: space-evenly; ">
+        <a href="standings.html" class="navRight" style="border-radius: 8px; padding:3px;  ">Medal Standings</a>
+        <!-- <a href="standings.html" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;border-radius: 8px; padding:3px; text-shadow:2px 2px 5px rgba(255, 170, 58, 0.68);  ">Medal Standings</a> -->
+        <a href="history.html" class="navRight" style="border-radius: 8px; padding:3px;  "  >Historical Data</a>
+        <a href="#" class="navRight"  style=" border-radius: 8px; padding:3px;  " >Medal Trends</a>
+        <a href="#" class="navRight"  style=" border-radius: 8px; padding:3px;  " >Athlete spotlight</a>
+        <a href="#" class="navRight"  style=" border-radius: 8px; padding:3px;  " >Countries Compare</a>
+        </div>
+    </div>
+    <!-- <span> <h1 style="text-shadow: 2px 2px blur-radius skyblue; margin-top: 5rem;">Olympic</h1><h3>Medals List</h3></span> -->
+
+  <div class="container">
+    <img id="logo" style="margin-top: 0;padding-top:0;"   src="../assets/rings.png">
+    <div  class="aboutOlymp" style=" width:100rem">
+      <h4 style="font-size: 2rem; font-family:Merriweather;margin-left: 1.6rem; margin-bottom: 0; ">About Olympics</h4>
+      <div>
+      <ul >
+        <li> <p class="aboutDesc">  The Olympic Games are the world’s foremost sporting event, bringing together athletes from all corners of the globe to compete in a spirit of excellence, friendship, and respect. Originating in ancient Greece over 2,700 years ago, the modern Olympic Games were revived in 1896 and have since become a symbol of unity and global harmony.
+    </p></li>
+    <li><p class="aboutDesc"> Held every four years, the Summer and Winter Olympics showcase a wide range of sports, from athletics and swimming to skiing and ice hockey. Athletes compete not just for medals, but for honor, national pride, and the pursuit of personal and collective greatness.<br>
+    </p></li>
+    <li><p class="aboutDesc"> The Olympic values — excellence, respect, and friendship — lie at the heart of every event, promoting fair play and inspiring millions worldwide. With each edition, the Olympics continue to transcend barriers, celebrate diversity, and leave a lasting legacy of hope and inspiration.
+    </p></li>
+      </ul>
+      </div>
+
+    </div>
+  </div>
+  
+<div style="background-color: black; height: 42.5rem;">
+  <h4 class="sportsHeading" style="margin-top:8rem;margin-bottom:4rem ; text-align: center; word-spacing: 4px; font-size: 5rem; font-family:Michroma; color: rgb(252, 99, 16);">S p o r t s</h4>
+  <div id="sports">
+    <img class="block"  id="soccerButton" onclick="nameset(this)" name="Soccer"  src="../assets/Soccer.png" alt="soccer">
+    <img class="block" id="basketballButton" onclick="nameset(this)" name="Basketball" src="../assets/Basketball.png" alt="basketball">
+     <img class="block" id="AthleticsButton" onclick="nameset(this)" name="Athletics" src="../assets/Athletics.png" alt="Athletics">
+    <img class="block" id="swimmingButton" onclick="nameset(this)" name="Swimming" src="../../assets/Swimming.png" alt="swimming">
+     <img class="block"  id="gymnasticsButton" onclick="nameset(this)" name="Gymnastics" src="../assets/Gymnastics.png" alt="gymnastics">
+     <a href="sportPage.html" style="display: flex; align-items: center; justify-content: center;" ><img   src="../assets/flags/next_arrow.png"  style="width:5rem; height: 5rem; background-color: aliceblue;border-radius: 50%; " alt="tennis"></a>
+     <!-- <span style=""><a style="font-size: 1.6rem; color:white " href="sports.html">View More...</a></span> -->
+  </div>
+  </div>
+  <h4 class="sportsHeading" style="margin-top:8rem;margin-bottom:4rem ; word-spacing: 4px; text-align: center; font-size: 5rem;font-family:Michroma; color: rgb(252, 99, 16);">C o u n t r i e s</h4>
+
+  <div class="countries">
+    <img class="block" src="../assets/usa-flag.png" alt="">
+    <img class="block"  src="../assets/flags/soviet_union" alt="">
+    <img class="block"  src="../assets/flags/germany.jpg" alt="">
+    <img class="block"  src="../assets/Great-Britain-flag.png" alt="">
+    <img class="block"  src="../assets/china-flag.png" alt="">
+    <img class="block"  src="../assets/flags/france.jpg" alt="">
+    <img class="block"  src="../assets/flags/italy.jpg" alt="">
+    <img class="block"  src="../assets/flags/hungary.jpg" alt="">
+    <img class="block"  src="../assets/flags/sweden.jpg" alt="">
+    <img class="block"  src="../assets/japan-flag.png" alt="">
+    <img class="block"  src="../assets/flags/czechoslovakia.jpg" alt="">
+    <img class="block"  src="../assets/flags/Australia.jpg" alt="">
+    <img class="block"  src="../assets/flags/russia.jpg alt="">
+    <img class="block"  src="../assets/flags/netherlands.jpg" alt="">
+    <img class="block"  src="../assets/flags/spain.jpg" alt="">
+
+  </div>
+  <!-- <div style=" height: 65rem;">
+      <h4 class="sportsHeading" style="margin-top:8rem;margin-bottom:4rem ; text-align: center; font-size: 5rem; font-family:fantasy ; color: rgb(62, 110, 214);">Quizz</h4>
+
+  <div class="quizzDiv">
+      <div class="images"><image src="../assets/scroll-removebg-preview.png"></image></div>
+      <div class="quizSection">
+        <p>What is your Name?</p>
+        <div class="quizzOptions">
+          <div><span class="options"><button>A</button><p>Raj Kumar</p></span></div>
+          <div><span class="options"><button>B</button><p>Prabhas</p></span></div>
+          <div><span class="options"><button>C</button><p>Sai Vivek</p></span></div>
+        </div>
+      </div>
+  </div>
+  </div> -->
+<!-- news slider-->
+   <!-- <h4 class="sportsHeading" style="margin-top:4rem;margin-bottom:4rem ; text-align: center; font-size: 5rem; font-family:monospace ; color: rgb(252, 16, 16);">latest news</h4> -->
+<!-- 
+ <div class="slider">
+  <div class="slide-track">
+
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    DUP-->
+    <!-- <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+    <div class="slide">
+      <img src="../assets/flags/Australia.jpg">
+    </div>
+
+  </div>
+
+
+ </div> --> 
+
+  <footer>
+    
+  </footer>
+<script src="../scripts/index.js"></script>
+</body>
+</html>
